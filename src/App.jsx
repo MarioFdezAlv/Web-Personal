@@ -135,11 +135,11 @@ function App() {
           <ul>
             <li>
               Desarrollo Python Avanzado - UNED{" "}
-              <a href="/Certificado_curso_Python_Avanzado_UNED.pdf">🗒️</a>
+              <a href="/Web-Personal/Certificado_curso_Python_Avanzado_UNED.pdf">🗒️</a>
             </li>
             <li>
               Desarrollo y Diseño Web - Universidad Politécnica de Valencia{" "}
-              <a href="/Certificado_curso_Desarrollo_Web_UPV.pdf">🗒️</a>
+              <a href="/Web-Personal/Certificado_curso_Desarrollo_Web_UPV.pdf">🗒️</a>
             </li>
           </ul>
         </section>
@@ -160,7 +160,7 @@ function App() {
                 : lang === "fr"
                 ? "Anglais - B2"
                 : "Inglese - B2"}{" "}
-              <a href="/Certificado_Cambridge_B2.pdf">🗒️</a>
+              <a href="/Web-Personal/Certificado_Cambridge_B2.pdf">🗒️</a>
             </li>
             <li>
               {lang === "es"
