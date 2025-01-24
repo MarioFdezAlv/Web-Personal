@@ -2,7 +2,7 @@
   "name": "web-personal",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://MarioLaVilla.github.io/Web-Personal",
+  "homepage": "https://mariofdezalv.github.io/Web-Personal/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
