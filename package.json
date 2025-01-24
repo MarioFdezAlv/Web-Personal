@@ -1,13 +1,11 @@
 {
-  "name": "web_personal",
-  "private": true,
+  "name": "web-personal",
   "version": "0.0.0",
-  "type": "module",
-  "homepage": "https://mariolavilla.github.io/Web-Personal/",
+  "private": true,
+  "homepage": "https://MarioLaVilla.github.io/Web-Personal",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
