@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+html, body {
+  overflow-x: hidden; /* Evita desbordamiento horizontal */
+  width: 100%;
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  position: relative;
+  left: 0;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.header-text {
+  text-align: left;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #b71c5c;
+}
+
+.language-toggle {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.language-toggle button {
+  margin-bottom: 0.5rem;
+  padding: 8px 15px;
+  border: none;
+  background-color: #b71c5c;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 50px;
+}
+
+.language-toggle button:hover {
+  background-color: #880e4f;
+  transform: scale(1.05);
+}
+
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 16px; /* Esquinas más redondeadas */
+  padding: 1.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más grande */
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efecto al pasar el ratón */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.about-section {
+  grid-column: span 2;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #b71c5c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .language-toggle {
+    position: relative;
+    margin-top: 1rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Herramientas y Habilidades */
+.skills-double {
+  grid-column: span 2; /* Ocupa dos columnas */
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide en dos columnas */
+  gap: 1rem; /* Espacio entre las columnas */
+}
+
+.skills-grid ul,
+.card ul {
+  list-style-position: outside; /* Los puntos se alinean a la izquierda */
+  padding-left: 1.2rem; /* Ajusta el espaciado desde el borde izquierdo */
+  margin: 0; /* Elimina el margen superior e inferior */
+}
+
+.skills-grid li,
+.card li {
+  margin-bottom: 0.5rem; /* Espacio entre elementos de la lista */
+  line-height: 1.6; /* Mejora la legibilidad */
+}
+
+.card h2 {
+  margin-bottom: 1rem; /* Espacio debajo del título */
+}
+
+/* Estilos para enlaces */
+a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: #b71c5c;
+  transition: color 0.3s; /* Transición suave para cambios de color */
+}
+
+a:visited {
+  color: b71c5c; /* Mantén el color original tras ser visitado */
+}
+
+a:hover {
+  color: #880e4f; /* Color al pasar el ratón (opcional) */
+}
+
