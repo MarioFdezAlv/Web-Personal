@@ -111,7 +111,6 @@ footer {
   color: #b71c5c;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -134,8 +133,59 @@ footer {
     margin-top: 1rem;
   }
 
+  /* Asegurar que todos los bloques estén en vertical */
   .grid-container {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Reordenar secciones: Contacto siempre al final */
+  #about {
+    order: 1;
+  }
+
+  #education {
+    order: 2;
+  }
+
+  #courses {
+    order: 3;
+  }
+
+  #languages {
+    order: 4;
+  }
+
+  #skills {
+    order: 5;
+  }
+
+  #contact {
+    order: 6;
+  }
+
+  /* Herramientas y Habilidades: cambiar a una sola columna */
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Espaciado entre elementos */
+  }
+}
+
+@media (max-width: 480px) {
+  .header-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .language-toggle button {
+    padding: 0.4em 0.8em;
+  }
+
+  /* Mantener el ajuste de columnas en habilidades para pantallas más pequeñas */
+  .skills-grid {
+    flex-direction: column;
+    gap: 0.5rem; /* Espaciado entre elementos */
   }
 }
 
